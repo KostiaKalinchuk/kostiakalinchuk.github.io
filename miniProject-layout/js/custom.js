@@ -7,7 +7,7 @@ $(function(){
 			'paddingTop': h_header,
 			'paddingBottom': h_footer
 		});
-	}
+	};
 
 	$(window).bind('load resize', hf);
 

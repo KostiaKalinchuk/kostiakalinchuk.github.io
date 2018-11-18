@@ -199,7 +199,6 @@ header {
 .about-wrap-content {
     display: flex;
     align-items: flex-start;
-    margin-right: 60px;
     flex: 1;
 }
 
@@ -218,7 +217,7 @@ header {
 }
 
 .about-wrap-content__text h6 {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .about-wrap-content__text p {
@@ -238,6 +237,7 @@ header {
 
 .about-wrap-img {
     position: relative;
+    margin-left: 60px;
 }
 
 .about-wrap-img__icon {
@@ -250,4 +250,38 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box-skills {
+    display: flex;
+    margin-top: 120px;
+}
+
+.box-skills__item {
+    flex: 1;
+    width: 50%;
+}
+
+.box-skills__item--img img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.box-skills__item--img {
+    padding-right: 50px;
+    text-align: right;
+}
+
+.box-skills__item--content {
+    padding-left: 45px;
+}
+
+.bars-line {
+    height: 10px;
+    background: #e7e7e7;
+}
+
+.bars-line > div {
+    height: 10px;
+    background: #f49d09;
 }
