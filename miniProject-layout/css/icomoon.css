@@ -67,14 +67,12 @@
 }
 .icon-mail:before {
   content: "\e90a";
-  color: #808080;
 }
 .icon-params:before {
   content: "\e90b";
 }
 .icon-pen:before {
   content: "\e90c";
-  color: #808080;
 }
 .icon-photo:before {
   content: "\e90d";
@@ -93,11 +91,9 @@
 }
 .icon-user:before {
   content: "\e911";
-  color: #fff;
 }
 .icon-user2:before {
   content: "\e912";
-  color: #fff;
 }
 .icon-world:before {
   content: "\e913";
