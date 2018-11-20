@@ -284,6 +284,7 @@ header {
 }
 
 /* Heading ==========================================*/
+
 .heading {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,6 +335,7 @@ header {
 }
 
 /* About ==========================================*/
+
 .about-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -526,6 +528,7 @@ header {
 }
 
 /* quote ==========================================*/
+
 .quote {
     text-align: center;
     color: #fff;
