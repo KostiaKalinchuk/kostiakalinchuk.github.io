@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+* {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: darkgray;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.header-container a:hover {
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-container a {
+    color: #000;
+    margin-right: 20px;
+    padding: 37px 6px;
+    text-transform: uppercase;
+}
+
+.main-menu {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+main h4 {
+    font-size: 18px;
+}
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 250px 1fr 200px;
+    grid-column-gap: 10px;
+}
+
+.left-block {
+    background-color: darkgray;
+    height: 250px;
+}
+
+.left-block h4 {
+    margin: 50% auto;
+    width: 4em;
+}
+
+.middle-block {
+    background-color: darkgray;
+    height: 100vh;
+}
+
+.middle-block h4 {
+    margin: 15px auto;
+    width: 4em;
+}
+
+.task {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.comments .selected {
+    background: greenyellow;
+}
+
+.comment {
+    background-color: gainsboro;
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 10px;
+    overflow: hidden;
+    height: 95px;
+}
+
+.comment p {
+    padding: 5px;
+}
+
+.right-block {
+    background-color: darkgray;
+}
+
+.right-block h4 {
+    margin: 50% auto;
+    width: 4em;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.menu {
+    background-color: grey;
+    left: -285px;
+    height: 100%;
+    position: fixed;
+    width: 285px;
+}
+
+.background {
+    margin: 15px 0 0 10px;
+}
+
+.menu ul {
+    border-top: 1px solid #555;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #555;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    background-color: #555;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.icon-close {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.menu-icon {
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu-icon span:nth-child(2), .menu-icon span:nth-child(3) {
+    top: 13px;
+}
+
+.menu-icon span:nth-child(4) {
+    top: 26px;
+}
+
+@media (max-width: 750px) {
+    header {
+        padding: 0;
+    }
+
+    .header-container a {
+        padding: 5px 3px;
+        margin-right: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .logo img {
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .hidden-menu {
+        display: block;
+    }
+
+    .main-container {
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+
+    .left-block {
+        height: 100%;
+    }
+
+    .left-block h4 {
+        margin: 15% auto;
+    }
+
+    .middle-block {
+        height: 100%;
+    }
+
+    .right-block {
+        height: 150px;
+    }
+
+    .right-block h4 {
+        margin: 8% auto;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptive layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="hidden-menu">
+            <div class="menu">
+                <div class="icon-close">
+                    <img src="img/close-btn.png">
+                </div>
+                <ul>
+                    <li><a href="#">Menu1</a></li>
+                    <li><a href="#">Menu2</a></li>
+                    <li><a href="#">Menu3</a></li>
+                </ul>
+            </div>
+            <div class="background">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="img/LOGO.png">
+        </div>
+        <nav role="navigation">
+            <ul class="main-menu">
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+            </ul>
+            <a href="#" class="btn">Help button</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="main-container">
+        <div class="left-block">
+            <h4>Block 1</h4>
+        </div>
+        <div class="middle-block">
+            <h4>Block 2</h4>
+            <div class="comments">
+                <div class="comment">
+                    <img src="img/avatar.png">
+                    <p>Here goes very long text that shouldnot stretch this block nor by with nor by height. it shold be
+                        cut three periods like this.
+                        Here goes very long text that shouldnot stretch this block nor by with nor by height. it shold
+                        be cut three periods like this.
+                        Here goes very long text that shouldnot stretch this block nor by with nor by height. it shold
+                        be cut three periods like this
+                        Here goes very long text that shouldnot stretch this block nor by with nor by height. it shold
+                        be cut three periods like this</p>
+                </div>
+                <div class="comment">
+                    <img src="img/avatar.png">
+                    <p>Here goes very long text that shouldnot stretch this block nor by with nor by height. it shold be
+                        cut three periods like this</p>
+                </div>
+                <div class="comment">
+                    <img src="img/avatar.png">
+                    <p>Here goes very long text that shouldnot stretch this block nor by with nor by height. it shold be
+                        cut three periods like this</p>
+                </div>
+            </div>
+            <p class="task">Clicking on each of the blocks above should toggle its class name. Show it by changing
+                background color.
+                Write a JS function that does it once and appply it to each block.</p>
+        </div>
+        <div class="right-block">
+            <h4>Block 3</h4>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
