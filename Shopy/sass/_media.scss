@@ -1,0 +1,96 @@
+@import "vars";
+
+@media screen and (min-width: 1090px) and (max-width: 1305px) {
+  .container .product .description .order {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .product .slider .menu-slider a {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1089px) {
+  .container .product .description .order {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .product .slider .menu-slider a {
+    margin-left: 0;
+  }
+  .container .product .description .selectors .choos {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .container .product .description .order .order-link a img {
+    margin-right: 5px;
+  }
+  .container .product .slider .menu-slider a {
+    width: 65px;
+    height: 59px;
+    background-color: #f4f6f8;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .container .product .slider .menu-slider a img {
+    margin-top: 0;
+
+  }
+  .container .big-header a {
+    margin-right: 25px;
+  }
+  .container .big-header .info .basket .badge {
+    right: 31px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 799px) {
+  .container .small-header {
+    margin: 25px 25px 25px 25px;
+    display: block;
+    .social {
+      img {
+        margin-top: 25px;
+      }
+    }
+  }
+  .container {
+    width: 90%;
+  }
+  .container .big-header .logo img {
+    width: 90px;
+    margin-top: 10px;
+  }
+  .container .big-header .main-menu {
+    display: none;
+  }
+  .container .product {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+  }
+  .container .product .slider .menu-slider a {
+    margin-top: 20px;
+  }
+  .container .product .description .selectors .choos {
+    margin-right: 8px;
+  }
+  .container .big-header {
+    grid-template-columns: 25% 35% 35%;
+    margin: 20px 0 20px 0;
+  }
+  .menuToggle {
+    display: block;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    z-index: 999;
+    margin-top: 45px;
+  }
+  .menu li {
+    float: none;
+  }
+}
