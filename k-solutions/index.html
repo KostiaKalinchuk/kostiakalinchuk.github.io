@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>k-solutions</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"><img src="img/logo_white_animated.svg"></a>
+                </div>
+                <div class="info">
+                    <img src="img/emails.png">
+                    <a href="mailto:support@piastrix.com?subject=dmitriy@gmail.com&amp;body=...">support@piastrix.com</a>
+                    <a href="#" class="eng">
+                    English
+                </a>
+                    <a href="#" class="ru">
+                    <span>Русский</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="container">
+            <div class="modal">
+                <div class="modal-content">
+                    <h5>Отправить форму</h5>
+                </div>
+                <div class="modal-body">
+                    <div id="result_form"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close">Закрыть</button>
+                </div>
+            </div>
+            <div class="invoice">
+                <div class="wrap">
+                    <h1>Номер инвойса 101</h1>
+                    <div class="recipient">
+                        <span class="name">Получатель:</span><span>test SHop</span>
+                    </div>
+                    <div class="description">
+                        <span class="name">Описание:</span><span>Test invoice</span>
+                    </div>
+                    <hr>
+                    <div class="sum">
+                        <span>Сумма:</span><span>10 RUB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <h2>Метод оплаты</h2>
+                <div class="payment-methods">
+                    <a onclick="view('sample-2')" href="#" class="method-tag">
+                    <img src="img/bitcoin.png" alt="">
+                    <span>Bitcoin</span>
+                </a>
+                    <a onclick="view('sample-2')" href="#" class="method-tag">
+                    <img src="img/visa_mc.png" alt="">
+                    <span>Visa/Mastercard</span>
+                </a>
+                    <a onclick="view('sample-2')" href="#" class="method-tag">
+                    <img src="img/mts.png" alt="">
+                    <span>MTS</span>
+                </a>
+                    <a onclick="view('sample-2')" href="#" class="method-tag">
+                    <img src="img/webmoney.png" alt="">
+                    <span>Webmoney</span>
+                </a>
+                    <a onclick="view('sample-2')" href="#" class="method-tag">
+                    <img src="img/payeer.png" alt="">
+                    <span>Payeer</span>
+                </a>
+                </div>
+            </div>
+            <div class="payment-method" id="sample-2" style='display:none;'>
+                <div class="method-tag">
+                    <img src="img/payeer.png" alt="">
+            </div>
+                    <form method="POST" id="ajax_form" action="" accept-charset="UTF-8">
+                        <input type="email" name="email" value="9leon1@gmail.com" />
+                        <input type="submit" id="btn" class="demonstration" value="Оплатить" />
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer-wrap">
+                        <a href="https://en.wikipedia.org/wiki/Hyperlink" class="contacts">КОНТАКТЫ</a>
+                        <div class="cards">
+                            <img src="img/visa.png">
+                            <img src="img/masterCard.png">
+                            <img src="img/pciDss.png">
+                </div>
+                            <div class="lang">
+                                <a href="#" class="eng">
+                        English
+                    </a>
+                                <a href="#" class="ru">
+                        <span>Русский</span>
+                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="js/script-min.js"></script>
+</body>
+
+</html>
